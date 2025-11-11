@@ -17,17 +17,13 @@ function Header() {
             </h1>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6 lg:space-x-8 text-lg md:text-xl">
+          {/* Desktop Navigation + Reserve Button */}
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8 text-lg md:text-xl">
             <span className="text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Home</span>
             <span className="text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Menu</span>
             <span className="text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Reservations</span>
             <span className="text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Contacts</span>
-          </div>
-
-          {/* Reserve Button */}
-          <div className="hidden md:block">
-            <button className="bg-[#EE2E31] text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-[#5f8c09] transition-colors duration-300 text-sm sm:text-base">
+            <button className="ml-6 bg-[#EE2E31] text-white px-4 sm:px-6 py-2 rounded-lg hover:bg-[#5f8c09] transition-colors duration-300 text-sm sm:text-base">
               Reserve Table
             </button>
           </div>
@@ -67,12 +63,12 @@ function Header() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-2 space-y-2">
+          <div className="md:hidden mt-3 space-y-3 pb-4 border-t border-[#fd813a]">
             <span className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Home</span>
             <span className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Menu</span>
             <span className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Reservations</span>
             <span className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Contacts</span>
-            <button className="w-full bg-[#EE2E31] text-white px-4 py-2 rounded-lg hover:bg-[#5f8c09] transition-colors duration-300">
+            <button className="w-full bg-[#EE2E31] text-white px-4 py-3 rounded-lg hover:bg-[#5f8c09] transition-colors duration-300">
               Reserve Table
             </button>
           </div>
