@@ -69,11 +69,11 @@ function Header() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden mt-3 space-y-3 pb-4 border-t border-[#fd813a]">
-            <Link to="/" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Home</Link>
-            <Link to="/menu" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Menu</Link>
-            <Link to="/reserve" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Reservations</Link>
-            <Link to="/reserve" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer">Contacts</Link>
-            <Link to="/reserve">
+            <Link to="/" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/menu" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Menu</Link>
+            <Link to="/reserve" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Reservations</Link>
+            <Link to="/reserve" className="block text-[#fd813a] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Contacts</Link>
+            <Link to="/reserve" onClick={() => setIsOpen(false)}>
             <button className="w-full bg-[#EE2E31] text-white px-4 py-3 rounded-lg hover:bg-[#5f8c09] transition-colors duration-300">
               Reserve Table
             </button>
