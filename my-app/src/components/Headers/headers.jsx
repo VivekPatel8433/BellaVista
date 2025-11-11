@@ -13,7 +13,7 @@ function Header() {
           {/* Logo + Text */}
           <div className="flex items-center space-x-2 flex-shrink-0">
             <img src={logo} alt="Bella Vista Logo" className="h-10 sm:h-12 w-auto rounded-lg" />
-            <h1 className="font-dancing text-6xl sm:text-3xl font-bold text-italian-red">
+            <h1 className="font-dancing text-4xl sm:text-2xl font-bold text-italian-red">
               Bella Vista
             </h1>
           </div>
