@@ -181,7 +181,7 @@ export default function Footer() {
             <div className="w-full bg-black text-center text-white py-4 mt-10">
                  <p className="text-sm font-poppins">
                  © {new Date().getFullYear()} All Rights Reserved | Designed And Managed by 
-                 <span className="font-semibold text-orange-400"> V Group</span>
+                 <span className="font-semibold text-orange-400"> BellaVista</span>
                  </p>
             </div>
 
