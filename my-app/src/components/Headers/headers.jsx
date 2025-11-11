@@ -69,12 +69,12 @@ function Header() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden mt-3 space-y-3 pb-4 border-t border-[#fd813a]">
-            <Link to="/" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Home</Link>
-            <Link to="/menu" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Menu</Link>
-            <Link to="/reserve" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Reservations</Link>
-            <Link to="/reserve" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer" onClick={() => setIsOpen(false)}>Contacts</Link>
+            <Link to="/" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer font-poppins" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/menu" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer font-poppins" onClick={() => setIsOpen(false)}>Menu</Link>
+            <Link to="/reserve" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer font-poppins" onClick={() => setIsOpen(false)}>Reservations</Link>
+            <Link to="/reserve" className="block text-[#FF7E6B] hover:text-[#9E7462] font-medium cursor-pointer font-poppins" onClick={() => setIsOpen(false)}>Contacts</Link>
             <Link to="/reserve" onClick={() => setIsOpen(false)}>
-            <button className="w-full bg-[#EE2E31] text-white px-4 py-3 rounded-lg hover:bg-[#5f8c09] transition-colors duration-300">
+            <button className="w-full bg-[#EE2E31] text-white px-4 py-3 rounded-lg hover:bg-[#5f8c09] transition-colors duration-300 font-poppins">
               Reserve Table
             </button>
             </Link>
