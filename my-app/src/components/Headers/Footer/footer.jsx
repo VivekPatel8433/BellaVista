@@ -32,14 +32,14 @@ export default function Footer() {
 
         {/* LEFT SIDE — RESERVATION FORM */}
         <section className="bg-white p-6 shadow-xl rounded-xl">
-          <h2 className="text-3xl font-bold mb-6 text-center text-orange-600 font-lobster">
+          <h2 className="text-3xl font-bold mb-6 text-center text-orange-600 font-lobster font-poppins">
             Reserve a Table
           </h2>
 
           {submitted && (
             <div className="p-4 mb-6 bg-green-100 border border-green-300 rounded-lg text-green-800 text-center">
-              ✅ <span className="font-semibold">Reservation Successful!</span>
-              <p className="text-sm mt-2">
+              ✅ <span className="font-semibold font-poppins">Reservation Successful!</span>
+              <p className="text-sm mt-2 font-poppins" >
                 Thank you {formData.name}! We’ve received your booking for{" "}
                 <span className="font-semibold">{formData.guests}</span> guests on{" "}
                 <span className="font-semibold">{formData.date}</span> at{" "}
@@ -57,7 +57,7 @@ export default function Footer() {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 font-poppins"
               />
 
               <input
@@ -67,7 +67,7 @@ export default function Footer() {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 font-poppins"
               />
 
               <input
@@ -77,7 +77,7 @@ export default function Footer() {
                 value={formData.phone}
                 onChange={handleChange}
                 required
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 font-poppins"
               />
 
               <div className="flex gap-4">
@@ -87,7 +87,7 @@ export default function Footer() {
                   value={formData.date}
                   onChange={handleChange}
                   required
-                  className="w-1/2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  className="w-1/2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 font-poppins"
                 />
 
                 <input
@@ -96,7 +96,7 @@ export default function Footer() {
                   value={formData.time}
                   onChange={handleChange}
                   required
-                  className="w-1/2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                  className="w-1/2 p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 font-poppins"
                 />
               </div>
 
@@ -107,7 +107,7 @@ export default function Footer() {
                 onChange={handleChange}
                 min={1}
                 required
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 font-poppins"
               />
 
               <textarea
@@ -115,12 +115,12 @@ export default function Footer() {
                 placeholder="Special Requests"
                 value={formData.requests}
                 onChange={handleChange}
-                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400"
+                className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-orange-400 font-poppins"
               />
 
               <button
                 type="submit"
-                className="w-full bg-orange-500 text-white p-3 rounded-md hover:bg-orange-600 transition"
+                className="w-full bg-orange-500 text-white p-3 rounded-md hover:bg-orange-600 transition font-poppins"
               >
                 Reserve Table
               </button>
@@ -130,17 +130,17 @@ export default function Footer() {
 
         {/* RIGHT SIDE — CONTACT + LOCATION */}
         <section className="bg-white p-6 shadow-xl rounded-xl">
-          <h2 className="text-3xl font-bold mb-6 text-orange-600 font-lobster text-center">
+          <h2 className="text-3xl font-bold mb-6 text-orange-600 font-poppins text-center">
             Contact & Location
           </h2>
 
           <div className="space-y-6 text-gray-700">
 
             <div>
-              <h3 className="text-xl font-semibold text-orange-500">
+              <h3 className="text-xl font-semibold text-orange-500 font-poppins">
                 📍 Our Location
               </h3>
-              <p className="mt-2">
+              <p className="mt-2 font-poppins">
                 123 Italian Street  
                 <br /> Calgary, AB T2X 1Y4
               </p>
@@ -150,15 +150,15 @@ export default function Footer() {
               <h3 className="text-xl font-semibold text-orange-500">
                 ☎️ Contact Us
               </h3>
-              <p className="mt-2">Phone: (403) 555-9876</p>
-              <p>Email: support@italianbistro.com</p>
+              <p className="mt-2 font-poppins">Phone: (403) 555-9876</p>
+              <p className="font-poppins">Email: support@italianbistro.com</p>
             </div>
 
             <div>
               <h3 className="text-xl font-semibold text-orange-500">
                 🕒 Opening Hours
               </h3>
-              <p className="mt-2">
+              <p className="mt-2 font-poppins">
                 Mon–Fri: 11 AM – 10 PM <br />
                 Sat–Sun: 9 AM – 11 PM
               </p>
@@ -179,7 +179,7 @@ export default function Footer() {
 
           {/* Bottom footer bar */}
             <div className="w-full bg-black text-center text-white py-4 mt-10">
-                 <p className="text-sm">
+                 <p className="text-sm font-poppins">
                  © {new Date().getFullYear()} All Rights Reserved | Designed And Managed by 
                  <span className="font-semibold text-orange-400"> V Group</span>
                  </p>

@@ -43,7 +43,7 @@ function Dishes() {
         <h2 className="text-4xl font-bold font-lobster text-[#fd813a] mb-4">
           Signature Dishes
         </h2>
-        <p className="text-lg text-gray-700">Taste the finest Italian flavors</p>
+        <p className="text-lg text-gray-700 font-poppins">Taste the finest Italian flavors</p>
       </div>
 
       {/* Dishes Grid */}
@@ -79,11 +79,11 @@ function Dishes() {
                 loading="lazy"
               />
               <div className="p-6">
-                <h3 className="font-playfair text-xl font-semibold text-[#fd513a] mb-2">
+                <h3 className="font-poppins text-xl font-semibold text-[#fd513a] mb-2">
                   {dish.name}
                 </h3>
-                <p className="text-gray-700 text-sm mb-4">{dish.desc}</p>
-                <p className="text-[#fd513a] font-bold text-lg">{dish.price}</p>
+                <p className="text-gray-700 text-sm font-poppins mb-4">{dish.desc}</p>
+                <p className="text-[#fd513a] font-bold text-lg ">{dish.price}</p>
               </div>
             </motion.div>
           );

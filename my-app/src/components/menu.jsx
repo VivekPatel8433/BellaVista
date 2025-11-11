@@ -65,13 +65,13 @@ function Menu() {
   {/* Header */}
   <div className="mb-12 text-center">
     <h2 className="text-4xl font-lobster mb-4">Our Menu</h2>
-    <p className="text-lg text-gray-700">
+    <p className="text-lg text-gray-700 font-poppins">
       Authentic Italian Cuisine prepared with finest ingredients
     </p>
   </div>
 
   {/* Filter Buttons */}
-  <div className="flex flex-wrap justify-center gap-6 mb-12">
+  <div className="flex flex-wrap justify-center gap-6 mb-12 font-poppins">
     <button className="px-4 py-2 bg-[#FF5738] rounded-lg text-white shadow-lg">All</button>
     <button className="px-6 py-3 bg-[#FF5733] rounded-lg text-white shadow-lg">Appetizers</button>
     <button className="px-6 py-3 bg-[#FF5733] rounded-lg text-white shadow-lg">Pizza</button>
@@ -90,7 +90,7 @@ function Menu() {
           alt={item.alt}
           className="w-full h-auto max-h-48 object-cover"
         />
-        <div className="p-4 flex-1 flex flex-col justify-between">
+        <div className="p-4 flex-1 flex flex-col justify-between font-poppins">
           <div>
             <h3 className="text-xl font-semibold">{item.name}</h3>
             <p className="text-gray-600 mt-2">{item.desc}</p>

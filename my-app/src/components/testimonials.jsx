@@ -32,7 +32,7 @@ function GuestExperience() {
     <section className="w-screen py-16 bg-[#fff8f0]">
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold font-lobster text-[#fd813a] mb-4">Guest Experiences</h2>
-        <p className="text-lg text-gray-700">Hear what our happy guests have to say</p>
+        <p className="text-lg font-poppins text-gray-700">Hear what our happy guests have to say</p>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 sm:px-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -44,8 +44,8 @@ function GuestExperience() {
               className="w-24 h-24 rounded-full object-cover mb-4"
               loading="lazy"
             />
-            <h3 className="font-playfair text-xl font-semibold text-[#fd513a] mb-2">{guest.name}</h3>
-            <p className="text-gray-700 text-sm mb-4">{guest.review}</p>
+            <h3 className="font-playfair text-xl font-semibold font-poppins text-[#fd513a] mb-2">{guest.name}</h3>
+            <p className="text-gray-700 text-sm mb-4 font-poppins">{guest.review}</p>
             <div className="flex space-x-1">
               {Array.from({ length: 5 }, (_, i) => (
                 <span key={i} className={i < guest.rating ? "text-yellow-400" : "text-gray-300"}>

@@ -5,11 +5,11 @@ function AboutSection() {
         <div className="relative w-screen py-12">
     <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
         <div className="px-6 sm:px-8 md:px-12">
-            <h2 className="text-4xl font-bold mb-6 text-[#fd813a]">Our Story</h2>
-            <p className="text-lg mb-4">
+            <h2 className="text-4xl font-bold font-mplus mb-6 text-[#fd813a]">Our Story</h2>
+            <p className="text-lg mb-4 font-poppins">
                 For over three generations, the Rossi family has been crafting authentic Italian cuisine with recipes passed down through our lineage. Our chef, Marco Rossi, brings the traditional flavors of Tuscany to your table.
             </p>
-            <p className="text-lg mb-4">
+            <p className="text-lg mb-4 font-poppins">
                 We source only the finest ingredients: San Marzano tomatoes, Parmigiano-Reggiano aged 24 months, and fresh pasta made daily in our kitchen.
             </p>
         </div>
