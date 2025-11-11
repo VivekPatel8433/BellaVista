@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function HeroSection() {
   return (
     <div className="mt-[72px]">
@@ -12,23 +13,28 @@ function HeroSection() {
 
         <div className="absolute inset-0 flex items-start justify-start text-white px-20 py-40">
           <div className="max-w-xl">
-            <h1 className="text-playfair text-6xl sm:text-5xl md:text-6xl mb-2 font-bold text-[#a8fae3]">
+            <h1 className="text-playfair text-6xl sm:text-5xl md:text-6xl mb-2 font-bold text-[#a8fae3] font-poppins">
               Experience The Taste Of Italy
             </h1>
 
-            <p className="text-xl sm:text-xl md:text-2xl max-w-2xl mb-8 opacity-90">
+            <p className="text-xl sm:text-xl md:text-2xl max-w-2xl mb-8 opacity-90 font-poppins">
               Authentic Italian cuisine crafted with passion, served with love in the
               heart of Calgary City
             </p>
 
             <div className="flex gap-2 mt-2">
-              <button className="rounded-lg py-3 px-6 border border-gray-200 hover:bg-red-500 bg-green-400">
+              <Link to="/menu">
+                 <button className="rounded-lg py-3 px-6 border border-gray-200 hover:bg-red-500 bg-green-400 font-poppins">
                 View Menu
-              </button>
-
-              <button className="rounded-lg py-3 px-6 sm:px-3 border border-blue-200 hover:bg-blue-500">
-                Reserve Now
-              </button>
+               </button>
+              </Link>
+             
+              <Link to="/reserve">
+                 <button className="rounded-lg py-3 px-6 sm:px-3 border border-blue-200 hover:bg-blue-500 font-poppins">
+                    Reserve Now
+                 </button>
+              </Link>
+             
             </div>
           </div>
         </div>
