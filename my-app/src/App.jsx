@@ -6,7 +6,7 @@ import Dishes from "./components/dishes"
 import GuestExperience from "./components/testimonials"
 import Menu from "./components/menu"
 import Footer from "./components/Footer/footer"
-import { Analytics } from "@vercel/analytics/next"
+
 
 function App() {
 
