@@ -11,7 +11,7 @@ function HeroSection() {
         />
         <div className="absolute inset-0 bg-black/35"></div>
 
-        <div className="absolute inset-0 flex sm:items-center lg:items-start lg:justify-between text-white lg: px-20 py-20">
+        <div className="absolute inset-0 flex sm:items-center items-start justify-between text-white lg: px-20 py-20">
           <div className="max-w-xl">
             <h1 className="text-playfair text-6xl sm:text-5xl md:text-6xl mb-2 font-bold text-[#a8fae3] font-poppins">
               Experience The Taste Of Italy
