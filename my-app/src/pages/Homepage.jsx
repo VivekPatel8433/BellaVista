@@ -5,7 +5,7 @@ import AboutSection from "../components/aboutsection";
 import Dishes from "../components/dishes";
 import GuestExperience from "../components/testimonials";
 import Menu from "../components/menu";
-import Footer from "../components/Headers/Footer/footer";
+import Footer from "../Footer/footer";
 
 function Home() {
   return (
