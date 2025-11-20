@@ -31,7 +31,7 @@ export default function Footer() {
 
   try {
     const response = await axios.post(
-      "http://localhost:3001/api/reservation/reservetable",
+      "https://bellavista-dyaj.onrender.com/api/reservation/reservetable",
       {
         name: formData.name,
         email: formData.email,
