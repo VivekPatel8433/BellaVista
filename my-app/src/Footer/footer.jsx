@@ -31,7 +31,7 @@ export default function Footer() {
 
   try {
     const response = await axios.post(
-      "http://localhost:3001/api/reservation/reservetable",
+      "https://bella-vista-dun.vercel.app//api/reservation/reservetable",
       {
         name: formData.name,
         email: formData.email,
@@ -39,7 +39,7 @@ export default function Footer() {
         date: formData.date,
         time: formData.time,
         guests: formData.guests,
-        requests: formData.requests,
+        requests: formData.requests, 
       }
     );
 
